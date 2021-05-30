@@ -6,6 +6,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import colors from "./assets/colors/colors";
 import Icon from "react-native-vector-icons/Ionicons";
 import Home from "./components/Home";
+import Details from "./components/Details";
 
 const Stack = createStackNavigator();
 
@@ -17,6 +18,13 @@ export default function App() {
           <Stack.Screen
             name="Home"
             component={Home}
+            options={{
+              headerShown: false,
+            }}
+          />
+          <Stack.Screen
+            name="Details"
+            component={Details}
             options={{
               headerShown: false,
             }}
